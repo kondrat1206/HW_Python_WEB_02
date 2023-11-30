@@ -44,7 +44,7 @@ Module SortFolder will sort your files in the target folder, depends file extens
    assistant
    ```
 
-## Run with Virtual Environement (PipEnv):
+## Run with Virtual Environment (PipEnv):
 
 1. Clone the repository:
 
@@ -56,7 +56,7 @@ Module SortFolder will sort your files in the target folder, depends file extens
    cd ./HW_Python_WEB_02
    ```
 
-2. Activate Virtual Environement:
+2. Activate Virtual Environment:
 
    Install PipEnv:
 
@@ -64,13 +64,13 @@ Module SortFolder will sort your files in the target folder, depends file extens
    pip install pipenv
    ```
 
-   Make Virtual Environement:
+   Make Virtual Environment:
 
    ```bash
    pipenv install
    ```
 
-   Activate Virtual Environement:
+   Activate Virtual Environment:
 
    ```bash
    pipenv shell
@@ -80,6 +80,50 @@ Module SortFolder will sort your files in the target folder, depends file extens
 
    ```bash
    python ./assistant/main.py
+   ```
+
+## Run with Docker:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kondrat1206/HW_Python_WEB_02.git
+   ```
+
+   ```bash
+   cd ./HW_Python_WEB_02
+   ```
+
+2. Make container:
+
+   Make image:
+
+   ```bash
+   docker load -i assistant.tar
+   ```
+
+   Make container:
+
+   ```bash
+   docker run --name assistant  -it assistant
+   ```
+
+   ```bash
+   exit
+   ```
+
+3. Run:
+
+   Start container:
+
+   ```bash
+   docker start assistant
+   ```
+
+   Run application:
+
+   ```bash
+   docker exec -it assistant python /assistant/assistant/main.py
    ```
 
 ## Available Commands:
