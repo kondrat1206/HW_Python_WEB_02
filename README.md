@@ -11,11 +11,11 @@ Module SortFolder will sort your files in the target folder, depends file extens
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/kondrat1206/HW_Python_WEB_01.git
+   git clone https://github.com/kondrat1206/HW_Python_WEB_02.git
    ```
 
    ```bash
-   cd ./HW_Python_WEB_01
+   cd ./HW_Python_WEB_02
    ```
 
 2. Build packet:
@@ -42,6 +42,44 @@ Module SortFolder will sort your files in the target folder, depends file extens
 
    ```bash
    assistant
+   ```
+
+## Run with Virtual Environement (PipEnv):
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kondrat1206/HW_Python_WEB_02.git
+   ```
+
+   ```bash
+   cd ./HW_Python_WEB_02
+   ```
+
+2. Activate Virtual Environement:
+
+   Install PipEnv:
+
+   ```bash
+   pip install pipenv
+   ```
+
+   Make Virtual Environement:
+
+   ```bash
+   pipenv install
+   ```
+
+   Activate Virtual Environement:
+
+   ```bash
+   pipenv shell
+   ```
+
+3. Run:
+
+   ```bash
+   python ./assistant/main.py
    ```
 
 ## Available Commands:
